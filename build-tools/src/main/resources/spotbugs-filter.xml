@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FindBugsFilter
+        xmlns="https://github.com/spotbugs/filter/3.0.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="https://github.com/spotbugs/filter/3.0.0 https://raw.githubusercontent.com/spotbugs/spotbugs/3.1.1/spotbugs/etc/findbugsfilter.xsd">
+
+    <Match>
+        <BugPattern name="DLS_DEAD_LOCAL_STORE"/>
+    </Match>
+    <Match>
+        <BugPattern name="USBR_UNNECESSARY_STORE_BEFORE_RETURN"/>
+    </Match>
+    <Match>
+        <BugPattern name="SPRING_ENDPOINT"/>
+    </Match>
+    <Match>
+        <BugPattern name="IMC_IMMATURE_CLASS_NO_TOSTRING"/>
+    </Match>
+    <Match>
+        <BugPattern name="EXS_EXCEPTION_SOFTENING_NO_CONSTRAINTS"/>
+    </Match>
+    <Match>
+        <BugPattern name="SEC_SIDE_EFFECT_CONSTRUCTOR"/>
+    </Match>
+    <Match>
+        <BugPattern name="PRMC_POSSIBLY_REDUNDANT_METHOD_CALLS"/>
+    </Match>
+    <Match>
+        <BugPattern name="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR"/>
+    </Match>
+    <Match>
+        <BugPattern name="AI_ANNOTATION_ISSUES_NEEDS_NULLABLE"/>
+    </Match>
+    <Match>
+        <BugPattern name="OPM_OVERLY_PERMISSIVE_METHOD"/>
+    </Match>
+    <Match>
+        <BugPattern name="CRLF_INJECTION_LOGS"/>
+    </Match>
+
+</FindBugsFilter>
