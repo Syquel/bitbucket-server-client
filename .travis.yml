@@ -1,0 +1,13 @@
+dist: xenial
+
+language: java
+jdk: oraclejdk11
+
+addons:
+  sonarcloud:
+    organization: "syquel-github"
+    token:
+      secure: PHMllVE31WSgJ1lHL1ZenkZvytsGRzMT9MDE6+l/GN15twrTv5wBgTidpCM+NcVG/kRERmJnJu9HIxh2yXagHFGx+zmzsg/iRelugwIunc1HLK0pR1VqHLg9p8XlcZdueUSeTZMME/ThSB/oHTX6t7TWRxYMwqzZ4CIw0mg83LQJaw3ffvSub/NW7g0kj9w4R07y6ww3gYko2oC99S+8ifemz8ncMLHmruBskggL6Iwl9tT8GJJUj58hOxEUpub7vGh6iGIwkP23SC9je+vi3Kx40d4tsSv2AciJYKzEuo4/uGyU6FFdIIzIb3h5I4PRTzHRMaAVGlgoiNqTViacKzpyVy/I95DQbCgfRIdopy8DTNcWcQB2HExvTub0kfBSUJFdIDSMNPOPNosTPzhQdR78y8YVlzDnXoSYHAr7p6C2xXHeVO2R3Ua6LJVNSb6yx4c07xStGXQLkGZT0w3BCvf6pdOOYiBu9zc4XveygvEm5zkhFMk4o2w0mDp86pGkebDD3e1qE+d024+5lKa2qPEkEMqqhI+EMuJixAQKbMtAdmHymVgCxKsvWkJJzQKpc9wLCA04irDQNiDU5n6zhg1dqw0qKgsO7UVxmHKMEFqmxunUb2MlXvWYUEvGtMjulhewwTDEHHff48UoYjxnKXyD+KS9D0KnX8GxlQMRgN4=
+
+
+script: mvn clean verify site sonar:sonar
